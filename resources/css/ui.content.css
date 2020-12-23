@@ -1,0 +1,73 @@
+@charset 'utf-8';
+
+/* mian.html */
+.main-visual{width: 100%;min-height: 300px;margin-bottom: 1.875rem;background: #ddd;}
+.main-visual img{width: 100%;height: auto;}
+
+.main .row{margin-bottom: 1.25rem;}
+.main .alg-center .btn-link{margin: 0.625rem auto;}
+.main .itemlist{display: flex;flex-wrap: wrap;justify-content: center;align-items: flex-end;}
+.main .itemlist li{width: calc(100% / 3);margin-bottom: 1.875rem;text-align: center;}
+.main .itemlist li > a{display: inline-block;}
+.main .itemlist li img{width: 50%;height: auto;}
+.main .itemlist li .item-name{display: block;margin-top: 0.938rem;font-size: 0.813rem;color: #666;}
+
+/* partnership */
+.main .partnership .itemlist{justify-content: space-between;align-items: center;padding: 0;}
+.main .partnership .itemlist li img{width: 40%;}
+
+/* Contact Us */
+.main .contact{padding: 1.25rem;margin: 0 -1.25rem;background: #eee;}
+.main .contact .tit{font-weight: 600;}
+.main .contact .desc > span{display: block;}
+
+/* 치매토탈 서비스안내 동영상 */
+.main .gallery-item{position: relative;width: 100%;min-height: 12.5rem;background: url(/resources/images/main/ck-hcinfo.jpg) center no-repeat;background-size: cover;border-radius: 8px;overflow: hidden;}
+.main .gallery-item:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;display: block;width: 100%;background: rgba(0,0,0,0.65);content: '';}
+.main .gallery-item img{width: 100%; height: auto;}
+.main .gallery-item a{display: block;}
+.main .gallery-txt{position: absolute;top:50%;width: 100%;color: #fff;text-align: center;transform: translateY(-50%);}
+.main .gallery-txt P:nth-child(1){margin-bottom: 0.313rem;font-size: 1.5rem;}
+.main .gallery-txt P{font-weight: 300;font-size: 0.875rem;}
+.main iframe{width: 100%;padding: 0;}
+.mfp-iframe-holder .mfp-close{right: 0!important;}
+.mfp-bg{opacity: 1 !important;}
+/* #player{width: 100%;max-width: 100% !important;} */
+
+/*** media query ***/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .main .contact .tit , .main .contact .desc {text-align: center;}
+  .footer .desc > span{display: block;}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .btn-link{width: 30%;}
+  .main .itemlist{flex-wrap: nowrap;}
+  .main .gallery-item{min-height: 15.625rem;}
+  .main .contact .desc > span{position: relative;display: inline-block;margin-right: 0.5rem;}
+  .main .contact .desc > span.contact-tit{margin-right: 1rem;}
+  .main .contact .contact-tit:after{position: absolute;top: 50%;transform: translateY(-50%);display: inline-block;width: 1px;height: 1rem;margin-left: 0.625rem;background: #777;content: '';}
+  .footer .desc > span{margin-right: 0.625rem;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .main .itemlist{padding: 0 1.25rem;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+  .mfp-container{padding: 0!important;}
+}

@@ -1,0 +1,153 @@
+@charset 'utf-8';
+
+/* header */
+.header {position: fixed;top: 0;left: 0;right: 0;padding: 0.938rem;background-color: #fafafa;color: #333;z-index: 999;}
+.header .logo a{display: block;width: 184px;height: 25px;background: url(/resources/images/common/logo-main.png) no-repeat;background-size: contain;text-indent: -999em;}
+
+/* container */
+.container {padding-top: 50px;}
+.wrapper {max-width: 1280px;padding: 0 1.25rem;margin: 0 auto;}
+
+/* footer */
+.footer{text-align: center;}
+.footer .footer-inner{padding: 1.875rem 1.25rem;font-size: 0.875rem;color: #9e9e9e;}
+.footer .footer-inner a{color: #9e9e9e;border-bottom: 1px solid #9e9e9e;}
+.footer .copyright{font-size: 0.75rem;}
+.footer .footer-inner em{font-weight: 400;}
+
+/* base */
+body{min-width: 320px;color: #434343;}
+
+/* txt style */
+strong, em{font-weight: 500;}
+.tit{font-size: 1.5rem;color: #212121;word-break: keep-all;line-height: 1.3;}
+.tit > span{color: #bbb;}
+.desc{margin-bottom: 1.875rem;word-break: keep-all;}
+.desc:last-child{margin-bottom: 0;}
+
+/* class */
+.alg-center{margin: 0 auto;text-align: center;}
+.mail, .btn-poplink{color: #0094e4;border-bottom: 1px solid #0094e4;}
+.blind{position:absolute; top:0; left:-1000px; width:0; height:0; font-size:0; line-height:0}
+
+/* btn */
+.btn-link{display: inline-block;width:100%;padding: 0.5rem 0.938rem;font-size: 0.875rem;font-weight: 500;color: #0094e4;border: 1px solid #0094e4;border-radius: 8px;text-align: center;}
+
+/* layerpopup */
+.ck-popup {display: none;position: fixed;top: 0;left:0;right: 0;bottom: 0;width: 100%; height: 100vh;z-index: 1000;background-color: #fff;}
+.ck-popup .popup-bg {display: flex;align-items: center;justify-content: center;height: 100%;}
+.ck-popup .popup-cont {position: relative;display: inline-block;width: 100%;height: 100%;background-color: #fff;padding: 1.875rem 0 3.125rem;box-sizing: border-box;overflow-y: auto;word-break: keep-all;}
+.ck-popup .pop-item{padding: 0 1.25rem;}
+.ck-popup .pop-tit {display: flex;justify-content: space-between;align-items: center;padding: 0 1.25rem;margin-bottom: 1.25rem;}
+.ck-popup .pop-tit .tit{font-weight: 500;}
+.ck-popup .pop-subtit{margin-bottom: 1.25rem;font-size: 1.125rem;font-weight: 300;color: #212121;}
+.ck-popup .pop-subtit em{font-weight: 500;}
+.ck-popup .popup-cont p.desc {margin-bottom: 1.875rem;font-weight: 350;color: #464646;}
+.ck-popup .popup-cont .ck-btn-close {position: absolute;right: 20px;width: 17px;height: 17px;background:url(/resources/images/common/ck-btn-close.png) no-repeat; background-size: contain;}
+
+.ck-popup .terms-tit{margin-bottom: 0.625rem;font-size: 0.875rem;font-weight: 600;}
+.ck-popup .terms-desc{margin-bottom: 1.875rem;font-weight: 300;}
+.ck-popup .pop-temslist dl{margin-bottom: 1.875rem;}
+.ck-popup .pop-temslist dt{margin-bottom: 0.313rem;font-weight: 400;}
+.ck-popup .pop-temslist dd{font-weight: 300;}
+
+.ck-popup .ck-btnwrap{position: fixed;bottom: 0;}
+.ck-popup .ck-btnwrap a.ck-btn-1{width: 40%;}
+.ck-popup .ck-btnwrap button.ck-btn-2{width: 60%;}
+
+.ck-terms .terms-tit{margin-bottom: 0.625rem;font-size: 0.875rem;font-weight: 500;}
+.ck-terms .pop-temslist dl{position: relative;margin-bottom: 1.875rem;}
+.ck-terms .pop-temslist dt{margin-bottom: 0.313rem;font-weight: 400;}
+.ck-terms .pop-temslist dd{padding-left: 0.938rem;margin-bottom: 2px;font-weight: 300}
+.ck-terms .pop-temslist dd.dd-desc{padding-left: 0;}
+.ck-terms .pop-temslist p{margin-bottom: 0.625rem;font-weight: 300;}
+.ck-terms .pop-temslist dd span{position: absolute;left: 0;}
+.ck-terms .terms-table{margin-top: -1.25rem;}
+.ck-terms .terms-table table{width:100%;margin-bottom: 1.25rem;font-size: 0.813rem;border: 1px solid #ddd;border-bottom: none;}
+.ck-terms .terms-table table th{background: #ededed;}
+.ck-terms .terms-table table tr td:nth-child(1){background: #fdfdfd;}
+.ck-terms .terms-table th{font-weight: 400;}
+.ck-terms .service-tbl table tr td:nth-child(1){background: #fff;}
+.ck-terms .service-tbl table tr td.cell-bg{background: #fdfdfd;}
+.ck-terms .service-tbl th:nth-child(1){width: 30%;}
+.ck-terms .service-tbl th:nth-child(2){width: 25%;}
+.ck-terms .terms-table td{font-weight: 300;border-right: 1px solid #ddd;}
+.ck-terms .terms-table th, .ck-terms .terms-table td{border-bottom: 1px solid #ddd;padding: 0.313rem;}
+.ck-terms .terms-table dt{font-weight: 300;}
+.ck-terms .terms-table dd{padding-left: 1.125rem;}
+.ck-terms .pop-temslist .poplink{margin: -1.25rem 0 1.875rem;}
+.ck-terms .pop-temslist .poplink a{cursor: pointer;}
+
+.ck-termsbox .terms-table{margin-top: 0;}
+.ck-termsbox .terms-table table{font-size: 13px;}
+.ck-termsbox .terms-table.privacy-tbl{margin-bottom: 1.25rem;}
+.ck-termsbox .terms-table.privacy-tbl table{width: 100%;margin-bottom: 0.625rem;}
+.ck-termsbox .terms-table.privacy-tbl table td:nth-child(1){width: 35%;}
+.ck-termsbox .ck-msg{font-size: 13px;color: #767676;}
+#ck-termsbox1 .terms-table th{min-width: 50px;}
+#ck-termsbox1 .terms-table td span{position: relative;display: block;padding-left: 0.313rem;}
+#ck-termsbox1 .terms-table td span:before{position: absolute;left:0;display: inline-block;margin-right: 0.313rem;content: '-';}
+#ck-termsbox2 .terms-table table{width: 100%;}
+#ck-termsbox2 .terms-table table th{text-align: left;}
+
+/*** media query ***/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  float:left;
+  padding: 0.938rem;
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
